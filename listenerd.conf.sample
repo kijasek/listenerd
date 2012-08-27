@@ -1,0 +1,19 @@
+[listenerd]
+pid_file_location=/var/run
+clones=2
+
+amqp_host=localhost
+amqp_port=5672
+amqp_virtual_host=/
+amqp_user=guest
+amqp_password=guest
+
+amqp_exchange=msg_exchange
+amqp_queue=msg_queue
+amqp_routing_key=msg_test
+amqp_timeout=10
+amqp_message_discard_time=1200
+
+logging_format=%(process)s [%(levelname)s] <%(name)s> %(message)s
+logging_level=debug
+logging_facility=user
