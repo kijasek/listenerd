@@ -2,8 +2,7 @@
 from ConfigParser import RawConfigParser
 
 _conf_defaults = dict(        
-    #pid_file_location='/var/run',
-    pid_file_location='/tmp',
+    pid_file_location='/var/run',
     clones=1,
     
     logging_level='debug',

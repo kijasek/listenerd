@@ -1,4 +1,16 @@
                                 listenerd
 
 Python daemon listening for AMQP messages. Necessery files to create 
-debian (deb) package are included in the deb folder.
+debian (deb) package are included in the debian folder.
+
+Features:
+  
+  -- debian package installs listenerd script in /etc/init.d/
+  -- Python modules are installed in site-packages
+  -- daemon configuation is located in /etc 
+  -- script can be run in X clones
+  -- each clone has PID file located in /var/run
+  -- debian rules file determines which Python versions are installed
+     in the OS
+  -- daemon uses Python logging module to log to syslog
+
